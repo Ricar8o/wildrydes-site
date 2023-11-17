@@ -1,13 +1,24 @@
 # wildrydes-site secure webapp
 
-![Alt text](img/amplify-compile.png)
-![Alt text](img/front-deployed.png)
-![Alt text](img/register-form.png)
-![Alt text](img/verify-account.png)
-![Alt text](img/account-verified.png)
-![Alt text](img/dynamo-table.png)
-![Alt text](img/lambda.png)
-![Alt text](img/lambda-event.png)
-![Alt text](img/api-gateway.png)
-![Alt text](img/ride-working.png)
-![Alt text](img/unicorn-requested.png)
+## Amplify Deploy
+![amplify-compile](img/amplify-compile.png)
+![front-deployed](img/front-deployed.png)
+
+## After cognito integration
+![register-form](img/register-form.png)
+![verify-account](img/verify-account.png)
+![account-verified](img/account-verified.png)
+
+## Dynamo table
+![dynamo-table](img/dynamo-table.png)
+
+## Lambda Implementation
+![lambda](img/lambda.png)
+![lambda-event](img/lambda-event.png)
+
+## API Gateway
+![api-gateway](img/api-gateway.png)
+
+## API integration
+![ride-working](img/ride-working.png)
+![unicorn-requested](img/unicorn-requested.png)
