@@ -1,4 +1,9 @@
-# wildrydes-site secure webapp
+# Secure webapp
+
+The following implementation workshop was used:
+
+[AWS SERVERLESS APPLICATION MODEL](https://aws.amazon.com/es/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/)
+
 
 ## Amplify Deploy
 ![amplify-compile](img/amplify-compile.png)
@@ -22,3 +27,8 @@
 ## API integration
 ![ride-working](img/ride-working.png)
 ![unicorn-requested](img/unicorn-requested.png)
+
+
+## Visit the page
+
+[![amplifybutton](https://github.com/aws-amplify/docs/blob/main/public/images/Logos/Amplify%20Logo.svg)](https://main.d1qvsexai5zdix.amplifyapp.com)
