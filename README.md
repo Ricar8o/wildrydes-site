@@ -228,7 +228,7 @@ Recurso creado para integrar la función lambda con el endpoint y usar el autori
 
 Después de crear el autorizador, el recurso e integrarlo con la función lambda implementamos el API, nos da un link para invocar el recurso.
 
-Copiamos este link y lo añadimos al archivo [config.js](/js/config.js), confirmamos los cambios, subimos los cambios al repositorio y al deplegar ya tendremos habilitada la función de solicitar un viaje en la aplicación web.
+Copiamos este link y lo añadimos al archivo [config.js](/js/config.js), confirmamos los cambios, subimos los cambios al repositorio y al deplegar ya tendremos habilitada la función de solicitar un viaje después de haber iniciado sesión en la aplicación web.
 
 ![ride-working](img/ride-working.png)
 ![unicorn-requested](img/unicorn-requested.png)
