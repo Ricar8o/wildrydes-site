@@ -226,7 +226,7 @@ Autorizador creado para validar la autorización de los recursos.
 Recurso creado para integrar la función lambda con el endpoint y usar el autorizador con cognito.
 ![api-gateway](img/api-gateway.png)
 
-Después de crear el autorizador, el recurso e integrarlo con la función lambda implementamos el API, al hacerlo nos da un link para invocar el recurso.
+Después de crear el autorizador, el recurso e integrarlo con la función lambda implementamos el API, nos da un link para invocar el recurso.
 
 Copiamos este link y lo añadimos al archivo [config.js](/js/config.js), confirmamos los cambios, subimos los cambios al repositorio y al deplegar ya tendremos habilitada la función de solicitar un viaje en la aplicación web.
 
