@@ -37,7 +37,7 @@ Con estos comandos ya tendremos todos los recursos en el repositorio remoto de g
 
 Lo siguiente es ir al servicio de Amplify en la plataforma de AWS, escoger la opción de alojar una aplicación web y nos mostrará para elegir desde donde traeremos el código que se desplegará en la aplicación.
 
-![Alt text](img/amplify-code-providers.png)
+![amplify-code-providers](img/amplify-code-providers.png)
 
 Escogemos github, le damos permiso sobre el repositorio que creamos, escogemos el repositorio y seguimos los demás pasos de la guía para hacer el despliegue. 
 
@@ -46,10 +46,19 @@ Al implementarla realiza los pasos para desplegar la aplicación y nos brinda un
 ![amplify-compile](img/amplify-compile.png)
 ![front-deployed](img/front-deployed.png)
 
-## After cognito integration
+## Administrar usuarios
+Para la parte de administración de usuarios se siguieron los pasos de la guía para crear un grupo de usuarios en cognito y crear un cliente de aplicación, para pasarle el id del grupo de cognito y la clave de acceso del cliente al aplicativo web en el archivo [config.js](/js/config.js) para que pueda comunicarse con el grupo de usuarios de cognito.
+
+Cognito es quien se encarga de toda la parte lógica de la autenticación de los usuarios y la palicación web solo mostrará los mensajes al cliente.
+
+![cognito-group](img/cognito-group.png)
+Después de hacer el cambio en el archivo de configuración, subir los cambios al repositorio remoto y que amplify haya vuelto a desplegar, podremos registrar un usuario.
 ![register-form](img/register-form.png)
+Después de registrar un usuario, cognito se encarga de enviar un mensaje al correo de registro con el código para verificar el correo.
 ![verify-account](img/verify-account.png)
 ![account-verified](img/account-verified.png)
+
+Al momento de verificar ya se podrá acceder al aplicativo en la página /signin.html con el correo y con la clave creada al momento de hacer el registro.
 
 ## Dynamo table
 ![dynamo-table](img/dynamo-table.png)
