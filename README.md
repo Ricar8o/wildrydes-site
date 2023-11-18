@@ -17,7 +17,7 @@ La arquitectura de la aplicación utiliza AWS Lambda, Amazon API Gateway, Amazon
 Y se implementa en 4 pasos:
 
 1. **Alojar un sitio web estático:** configurar AWS Amplify para alojar los recursos estáticos para la aplicación web con implementación continua incorporada.
-2. **Administrar usuarios:** crear un grupo de usuarios de Amazon Cognito para administrar las cuentas de los usuarios.
+2. **Administrar usuarios:** crear un grupo de usuarios de Amazon Cognito para administrar la autorización y autenticación del aplicativo.
 3. **Crear un backend sin servidor:** Crear un proceso de backend para manejar las solicitudes de la aplicación web e implementarlo en una función de Lambda.
 4. **Implementar una API RESTful:** Usando Amazon API Gateway para exponer una función de Lambda como una API RESTful.
 
@@ -217,10 +217,19 @@ Al ejecutar la prueba podemos ver que esta funcionando correctamente el código 
 
 ![lambda-event](img/lambda-event.png)
 
-## API Gateway
+## Implementar una API RESTful
+Para esta sección se siguieron los pasos de la guía para crear una API REST en el servicio de AWS API GATEWAY, conectar un endpoint de la API a la función desplegada en AWS Lambda y usar un autorizador que a través del grupo de usuarios de cognito valide que solo un usuario con un token valido pueda realizar la petición al recurso.
+
+Autorizador creado para validar la autorización de los recursos.
+![authorizer](img/authorizer.png)
+
+Recurso creado para integrar la función lambda con el endpoint.
 ![api-gateway](img/api-gateway.png)
 
-## API integration
+Después de crear el autorizador, el recurso e integrarlo con la función lambda implementamos el API, al hacerlo nos da un link para invocar el recurso.
+
+Copiamos este link y lo añadimos al archivo [config.js](/js/config.js), confirmamos los cambios, subimos los cambios al repositorio y al deplegar ya tendremos habilitada la función de solicitar un viaje en la aplicación web.
+
 ![ride-working](img/ride-working.png)
 ![unicorn-requested](img/unicorn-requested.png)
 
