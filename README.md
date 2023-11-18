@@ -234,6 +234,6 @@ Copiamos este link y lo añadimos al archivo [config.js](/js/config.js), confirm
 ![unicorn-requested](img/unicorn-requested.png)
 
 
-## Visit the page
+## Visitar la página
 
 [![amplifybutton](https://github.com/aws-amplify/docs/blob/main/public/images/Logos/Amplify%20Logo.svg)](https://main.d1qvsexai5zdix.amplifyapp.com)
