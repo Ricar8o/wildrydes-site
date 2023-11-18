@@ -223,7 +223,7 @@ Para esta sección se siguieron los pasos de la guía para crear una API REST en
 Autorizador creado para validar la autorización de los recursos.
 ![authorizer](img/authorizer.png)
 
-Recurso creado para integrar la función lambda con el endpoint.
+Recurso creado para integrar la función lambda con el endpoint y usar el autorizador con cognito.
 ![api-gateway](img/api-gateway.png)
 
 Después de crear el autorizador, el recurso e integrarlo con la función lambda implementamos el API, al hacerlo nos da un link para invocar el recurso.
