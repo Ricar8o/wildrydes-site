@@ -47,9 +47,9 @@ Al implementarla realiza los pasos para desplegar la aplicación y nos brinda un
 ![front-deployed](img/front-deployed.png)
 
 ## Administrar usuarios
-Para la parte de administración de usuarios se siguieron los pasos de la guía para crear un grupo de usuarios en cognito y crear un cliente de aplicación, para pasarle el id del grupo de cognito y la clave de acceso del cliente al aplicativo web en el archivo [config.js](/js/config.js) para que pueda comunicarse con el grupo de usuarios de cognito.
+Para la parte de administración de usuarios se siguieron los pasos de la guía para crear un grupo de usuarios en cognito y crear un cliente de aplicación, se agregan el id del grupo de cognito y la clave de acceso del cliente al aplicativo web en el archivo [config.js](/js/config.js) para que el aplicativo pueda comunicarse con el grupo de usuarios de cognito.
 
-Cognito es quien se encarga de toda la parte lógica de la autenticación de los usuarios y la palicación web solo mostrará los mensajes al cliente.
+Cognito es quien se encarga de toda la parte lógica de la autenticación de los usuarios y la aplicación web solo mostrará los mensajes al cliente.
 
 ![cognito-group](img/cognito-group.png)
 Después de hacer el cambio en el archivo de configuración, subir los cambios al repositorio remoto y que amplify haya vuelto a desplegar, podremos registrar un usuario.
